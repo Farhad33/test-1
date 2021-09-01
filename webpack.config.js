@@ -124,5 +124,6 @@ module.exports = {
   // required if using webpack-dev-server
   devServer: {
     hot: true,
+    historyApiFallback: true,
   },
 };

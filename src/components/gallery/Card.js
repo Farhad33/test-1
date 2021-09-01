@@ -1,15 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-const url = 'images/cards/'
 
 export default function Card({card: {description, yearAndNumber, title, src}}) {
+    const [imgSrc, setImgSrc] = useState('#')
+
+    useEffect(() => {
+        import(`../../assets/images/cards/${src}`)
+        .then(loadedSrc => {
+            console.log('loadedSrc', loadedSrc.default);
+            setImgSrc(loadedSrc.default)
+        })
+    }, [])
+
     return (
         <Cards>
             <Div>
                 <H1>{yearAndNumber}</H1>
                 <H3>{title}</H3>
                 <P>{description}</P>
-                <Img src={url+src} />
+                <Img src={imgSrc} />
             </Div>
         </Cards>
     )

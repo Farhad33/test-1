@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import stadium from '../../assets/images/design-photos/stadium-lowLight-min.jpg'
 
 export default function HomeRun({data: {homerunNum, date, place, opponent, pitcher, rightOrLeftHand, position, placeInBattingOrder, distance, inning, menOnBase, atBats, hits, walks, runs, rbi, stolenBases, finalScore, description, quotesAndComments}}) {
     return (
@@ -33,7 +34,7 @@ export default function HomeRun({data: {homerunNum, date, place, opponent, pitch
 }
 
 const HomeR = styled.div`
-    background-image: url('images/design-photos/stadium-lowLight-min.jpg');
+    background-image: url(${stadium});
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid white;

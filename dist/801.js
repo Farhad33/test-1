@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_boilerplate=self.webpackChunkreact_boilerplate||[]).push([[801],{801:function(e,t,a){e.exports=a.p+"images/1960-1.gif"}}]);

@@ -33,10 +33,10 @@ export default function Gallery() {
             </Cards>
             <SeeMoreCardsBtn onClick={seeMoreCardsOnClick}>See More Cards</SeeMoreCardsBtn>
 
-            <H1>Video Section</H1>
+            {/* <H1>Video Section</H1>
             <Videos>
                 {[...Array(videoQty).keys()].map((index) => <Video video={videos[index]} key={`video${index}`}/> )}
-            </Videos>
+            </Videos> */}
             <SeeMoreVideosBtn onClick={seeMoreVideosOnClick}>See More Videos</SeeMoreVideosBtn>
         </>
     )
